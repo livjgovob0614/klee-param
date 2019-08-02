@@ -1,5 +1,0 @@
-/home/jg/klee/build/runtime/runtime_build_Debug+Asserts/Intrinsic/klee_choose.bc: \
-  /home/jg/klee/runtime/Intrinsic/klee_choose.c \
-  /home/jg/klee/include/klee/klee.h
-
-/home/jg/klee/include/klee/klee.h:

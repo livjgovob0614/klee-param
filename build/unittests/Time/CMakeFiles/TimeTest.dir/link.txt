@@ -1,1 +1,0 @@
-/usr/bin/c++    -Wall -Wextra -Wno-unused-parameter -O2 -g   CMakeFiles/TimeTest.dir/TimeTest.cpp.o  -o ../TimeTest -rdynamic ../../lib/libgtest_main.a ../../lib/libkleeSupport.a ../../lib/libgtest.a -lpthread -lz -ltcmalloc -lz -ltcmalloc /usr/lib/llvm-6.0/lib/libLLVM-6.0.so -Wl,-rpath,/usr/lib/llvm-6.0/lib 

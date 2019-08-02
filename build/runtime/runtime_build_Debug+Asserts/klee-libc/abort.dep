@@ -1,5 +1,0 @@
-/home/jg/klee/build/runtime/runtime_build_Debug+Asserts/klee-libc/abort.bc: \
-  /home/jg/klee/runtime/klee-libc/abort.c \
-  /home/jg/klee/include/klee/klee.h
-
-/home/jg/klee/include/klee/klee.h:

@@ -1,5 +1,0 @@
-/home/jg/klee/build/runtime/runtime_build_Debug+Asserts/POSIX/selinux.bc: \
-  /home/jg/klee/runtime/POSIX/selinux.c \
-  /home/jg/klee/build/include/klee/Config/config.h
-
-/home/jg/klee/build/include/klee/Config/config.h:
