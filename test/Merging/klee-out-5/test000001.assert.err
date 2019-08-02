@@ -1,0 +1,9 @@
+Error: ASSERTION FAIL: 0
+File: loop_merge.c
+Line: 37
+assembly.ll line: 8670
+Stack: 
+	#000008670 in __klee_posix_wrapped_main (=1, =62754432) at loop_merge.c:37
+	#100006910 in __user_main (=1, =37233088) at /home/jg/klee/runtime/POSIX/klee_init_env.c:243
+	#200000521 in __uClibc_main (=38798728, =1, =37233088, =0, =0, =0, =0) at libc/misc/internals/__uClibc_main.c:401
+	#300000688 in main (=1, =37233088)

@@ -1,0 +1,659 @@
+The C compiler identification could not be found in "/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/3.5.1/CompilerIdC/.CMakeCCompilerId.o.bc"
+
+Determining if the include file malloc/malloc.h exists failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_beadf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_beadf.dir/build.make CMakeFiles/cmTC_beadf.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_beadf.dir/CheckIncludeFile.c.o
+/usr/local/bin/wllvm     -o CMakeFiles/cmTC_beadf.dir/CheckIncludeFile.c.o   -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'malloc/malloc.h' file not found
+#include <malloc/malloc.h>
+         ^~~~~~~~~~~~~~~~~
+1 error generated.
+ERROR:Failed to compile using given arguments: [-o CMakeFiles/cmTC_beadf.dir/CheckIncludeFile.c.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckIncludeFile.c]
+CMakeFiles/cmTC_beadf.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_beadf.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_beadf.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_beadf/fast' failed
+make: *** [cmTC_beadf/fast] Error 2
+
+
+Determining if the include file ndir.h exists failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_135b0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_135b0.dir/build.make CMakeFiles/cmTC_135b0.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_135b0.dir/CheckIncludeFile.c.o
+/usr/local/bin/wllvm     -o CMakeFiles/cmTC_135b0.dir/CheckIncludeFile.c.o   -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'ndir.h' file not found
+#include <ndir.h>
+         ^~~~~~~~
+1 error generated.
+ERROR:Failed to compile using given arguments: [-o CMakeFiles/cmTC_135b0.dir/CheckIncludeFile.c.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckIncludeFile.c]
+CMakeFiles/cmTC_135b0.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_135b0.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_135b0.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_135b0/fast' failed
+make: *** [cmTC_135b0/fast] Error 2
+
+
+Determining if the include file sys/ndir.h exists failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fc7c7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fc7c7.dir/build.make CMakeFiles/cmTC_fc7c7.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fc7c7.dir/CheckIncludeFile.c.o
+/usr/local/bin/wllvm     -o CMakeFiles/cmTC_fc7c7.dir/CheckIncludeFile.c.o   -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'sys/ndir.h' file not found
+#include <sys/ndir.h>
+         ^~~~~~~~~~~~
+1 error generated.
+ERROR:Failed to compile using given arguments: [-o CMakeFiles/cmTC_fc7c7.dir/CheckIncludeFile.c.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckIncludeFile.c]
+CMakeFiles/cmTC_fc7c7.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_fc7c7.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_fc7c7.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_fc7c7/fast' failed
+make: *** [cmTC_fc7c7/fast] Error 2
+
+
+Determining if the include file mach/mach.h exists failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c0675/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c0675.dir/build.make CMakeFiles/cmTC_c0675.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c0675.dir/CheckIncludeFile.c.o
+/usr/local/bin/wllvm     -o CMakeFiles/cmTC_c0675.dir/CheckIncludeFile.c.o   -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'mach/mach.h' file not found
+#include <mach/mach.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+ERROR:Failed to compile using given arguments: [-o CMakeFiles/cmTC_c0675.dir/CheckIncludeFile.c.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckIncludeFile.c]
+CMakeFiles/cmTC_c0675.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_c0675.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_c0675.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c0675/fast' failed
+make: *** [cmTC_c0675/fast] Error 2
+
+
+Determining if the include file histedit.h exists failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3a934/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3a934.dir/build.make CMakeFiles/cmTC_3a934.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3a934.dir/CheckIncludeFile.c.o
+/usr/local/bin/wllvm     -o CMakeFiles/cmTC_3a934.dir/CheckIncludeFile.c.o   -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'histedit.h' file not found
+#include <histedit.h>
+         ^~~~~~~~~~~~
+1 error generated.
+ERROR:Failed to compile using given arguments: [-o CMakeFiles/cmTC_3a934.dir/CheckIncludeFile.c.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckIncludeFile.c]
+CMakeFiles/cmTC_3a934.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_3a934.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_3a934.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_3a934/fast' failed
+make: *** [cmTC_3a934/fast] Error 2
+
+
+Determining if the include file CrashReporterClient.h exists failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_217b4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_217b4.dir/build.make CMakeFiles/cmTC_217b4.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_217b4.dir/CheckIncludeFile.c.o
+/usr/local/bin/wllvm     -o CMakeFiles/cmTC_217b4.dir/CheckIncludeFile.c.o   -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'CrashReporterClient.h' file not found
+#include <CrashReporterClient.h>
+         ^~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+ERROR:Failed to compile using given arguments: [-o CMakeFiles/cmTC_217b4.dir/CheckIncludeFile.c.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckIncludeFile.c]
+CMakeFiles/cmTC_217b4.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_217b4.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_217b4.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_217b4/fast' failed
+make: *** [cmTC_217b4/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_58622/fast"
+/usr/bin/make -f CMakeFiles/cmTC_58622.dir/build.make CMakeFiles/cmTC_58622.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_58622.dir/CheckSymbolExists.c.o
+/usr/local/bin/wllvm     -o CMakeFiles/cmTC_58622.dir/CheckSymbolExists.c.o   -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_58622
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58622.dir/link.txt --verbose=1
+/usr/local/bin/wllvm       CMakeFiles/cmTC_58622.dir/CheckSymbolExists.c.o  -o cmTC_58622 -lm 
+CMakeFiles/cmTC_58622.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x19): undefined reference to `pthread_create'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ERROR:Failed to compile using given arguments: [CMakeFiles/cmTC_58622.dir/CheckSymbolExists.c.o -o cmTC_58622 -lm]
+CMakeFiles/cmTC_58622.dir/build.make:97: recipe for target 'cmTC_58622' failed
+make[1]: *** [cmTC_58622] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_58622/fast' failed
+make: *** [cmTC_58622/fast] Error 2
+
+File /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_563e3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_563e3.dir/build.make CMakeFiles/cmTC_563e3.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_563e3.dir/CheckFunctionExists.c.o
+/usr/local/bin/wllvm    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_563e3.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_563e3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_563e3.dir/link.txt --verbose=1
+/usr/local/bin/wllvm   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_563e3.dir/CheckFunctionExists.c.o  -o cmTC_563e3 -lpthreads -lm 
+/usr/bin/ld: cannot find -lpthreads
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ERROR:Failed to compile using given arguments: [-DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_563e3.dir/CheckFunctionExists.c.o -o cmTC_563e3 -lpthreads -lm]
+CMakeFiles/cmTC_563e3.dir/build.make:97: recipe for target 'cmTC_563e3' failed
+make[1]: *** [cmTC_563e3] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_563e3/fast' failed
+make: *** [cmTC_563e3/fast] Error 2
+
+
+Determining if the function xar_open exists in the xar failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cc458/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cc458.dir/build.make CMakeFiles/cmTC_cc458.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cc458.dir/CheckFunctionExists.c.o
+/usr/local/bin/wllvm    -DCHECK_FUNCTION_EXISTS=xar_open   -o CMakeFiles/cmTC_cc458.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cc458
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc458.dir/link.txt --verbose=1
+/usr/local/bin/wllvm   -DCHECK_FUNCTION_EXISTS=xar_open    CMakeFiles/cmTC_cc458.dir/CheckFunctionExists.c.o  -o cmTC_cc458 -lxar -lm 
+/usr/bin/ld: cannot find -lxar
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ERROR:Failed to compile using given arguments: [-DCHECK_FUNCTION_EXISTS=xar_open CMakeFiles/cmTC_cc458.dir/CheckFunctionExists.c.o -o cmTC_cc458 -lxar -lm]
+CMakeFiles/cmTC_cc458.dir/build.make:97: recipe for target 'cmTC_cc458' failed
+make[1]: *** [cmTC_cc458] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_cc458/fast' failed
+make: *** [cmTC_cc458/fast] Error 2
+
+
+Determining if the arc4random exist failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4a37b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4a37b.dir/build.make CMakeFiles/cmTC_4a37b.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4a37b.dir/CheckSymbolExists.c.o
+/usr/local/bin/wllvm     -o CMakeFiles/cmTC_4a37b.dir/CheckSymbolExists.c.o   -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'arc4random'; did you mean 'srandom'?
+  return ((int*)(&arc4random))[argc];
+                  ^~~~~~~~~~
+                  srandom
+/usr/include/stdlib.h:324:13: note: 'srandom' declared here
+extern void srandom (unsigned int __seed) __THROW;
+            ^
+1 error generated.
+ERROR:Failed to compile using given arguments: [-o CMakeFiles/cmTC_4a37b.dir/CheckSymbolExists.c.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckSymbolExists.c]
+CMakeFiles/cmTC_4a37b.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_4a37b.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_4a37b.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4a37b/fast' failed
+make: *** [cmTC_4a37b/fast] Error 2
+
+File /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef arc4random
+  return ((int*)(&arc4random))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the mallctl exist failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_253da/fast"
+/usr/bin/make -f CMakeFiles/cmTC_253da.dir/build.make CMakeFiles/cmTC_253da.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_253da.dir/CheckSymbolExists.c.o
+/usr/local/bin/wllvm    -Werror=unguarded-availability-new   -o CMakeFiles/cmTC_253da.dir/CheckSymbolExists.c.o   -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'malloc_np.h' file not found
+#include <malloc_np.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+ERROR:Failed to compile using given arguments: [-Werror=unguarded-availability-new -o CMakeFiles/cmTC_253da.dir/CheckSymbolExists.c.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckSymbolExists.c]
+CMakeFiles/cmTC_253da.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_253da.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_253da.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_253da/fast' failed
+make: *** [cmTC_253da/fast] Error 2
+
+File /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc_np.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef mallctl
+  return ((int*)(&mallctl))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the malloc_zone_statistics exist failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_449ab/fast"
+/usr/bin/make -f CMakeFiles/cmTC_449ab.dir/build.make CMakeFiles/cmTC_449ab.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_449ab.dir/CheckSymbolExists.c.o
+/usr/local/bin/wllvm    -Werror=unguarded-availability-new   -o CMakeFiles/cmTC_449ab.dir/CheckSymbolExists.c.o   -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'malloc/malloc.h' file not found
+#include <malloc/malloc.h>
+         ^~~~~~~~~~~~~~~~~
+1 error generated.
+ERROR:Failed to compile using given arguments: [-Werror=unguarded-availability-new -o CMakeFiles/cmTC_449ab.dir/CheckSymbolExists.c.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckSymbolExists.c]
+CMakeFiles/cmTC_449ab.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_449ab.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_449ab.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_449ab/fast' failed
+make: *** [cmTC_449ab/fast] Error 2
+
+File /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc/malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef malloc_zone_statistics
+  return ((int*)(&malloc_zone_statistics))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strerror_s exist failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_80cf6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_80cf6.dir/build.make CMakeFiles/cmTC_80cf6.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_80cf6.dir/CheckSymbolExists.c.o
+/usr/local/bin/wllvm    -Werror=unguarded-availability-new   -o CMakeFiles/cmTC_80cf6.dir/CheckSymbolExists.c.o   -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'strerror_s'
+  return ((int*)(&strerror_s))[argc];
+                  ^
+1 error generated.
+ERROR:Failed to compile using given arguments: [-Werror=unguarded-availability-new -o CMakeFiles/cmTC_80cf6.dir/CheckSymbolExists.c.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckSymbolExists.c]
+CMakeFiles/cmTC_80cf6.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_80cf6.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_80cf6.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_80cf6/fast' failed
+make: *** [cmTC_80cf6/fast] Error 2
+
+File /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strerror_s
+  return ((int*)(&strerror_s))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the dladdr exist failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dc546/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dc546.dir/build.make CMakeFiles/cmTC_dc546.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dc546.dir/CheckSymbolExists.c.o
+/usr/local/bin/wllvm    -Werror=unguarded-availability-new   -o CMakeFiles/cmTC_dc546.dir/CheckSymbolExists.c.o   -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'dladdr'
+  return ((int*)(&dladdr))[argc];
+                  ^
+1 error generated.
+ERROR:Failed to compile using given arguments: [-Werror=unguarded-availability-new -o CMakeFiles/cmTC_dc546.dir/CheckSymbolExists.c.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckSymbolExists.c]
+CMakeFiles/cmTC_dc546.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_dc546.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_dc546.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_dc546/fast' failed
+make: *** [cmTC_dc546/fast] Error 2
+
+File /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <dlfcn.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef dladdr
+  return ((int*)(&dladdr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_WX_FLAG failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_29c53/fast"
+/usr/bin/make -f CMakeFiles/cmTC_29c53.dir/build.make CMakeFiles/cmTC_29c53.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_29c53.dir/src.cxx.o
+/usr/local/bin/wllvm++     -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXXABI_HAS_WX_FLAG  -Werror=unguarded-availability-new -nodefaultlibs   /WX -o CMakeFiles/cmTC_29c53.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx
+WARNING:Did not recognize the compiler flag "/WX"
+clang: error: no such file or directory: '/WX'
+ERROR:Failed to compile using given arguments: [-fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXXABI_HAS_WX_FLAG -Werror=unguarded-availability-new -nodefaultlibs /WX -o CMakeFiles/cmTC_29c53.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx]
+CMakeFiles/cmTC_29c53.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_29c53.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_29c53.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_29c53/fast' failed
+make: *** [cmTC_29c53/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_NO_WX_FLAG failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6a1ca/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6a1ca.dir/build.make CMakeFiles/cmTC_6a1ca.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6a1ca.dir/src.cxx.o
+/usr/local/bin/wllvm++     -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXXABI_HAS_NO_WX_FLAG  -Werror=unguarded-availability-new -nodefaultlibs   /WX- -o CMakeFiles/cmTC_6a1ca.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx
+WARNING:Did not recognize the compiler flag "/WX-"
+clang: error: no such file or directory: '/WX-'
+ERROR:Failed to compile using given arguments: [-fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXXABI_HAS_NO_WX_FLAG -Werror=unguarded-availability-new -nodefaultlibs /WX- -o CMakeFiles/cmTC_6a1ca.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx]
+CMakeFiles/cmTC_6a1ca.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_6a1ca.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_6a1ca.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_6a1ca/fast' failed
+make: *** [cmTC_6a1ca/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_EHSC_FLAG failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_60df1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_60df1.dir/build.make CMakeFiles/cmTC_60df1.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_60df1.dir/src.cxx.o
+/usr/local/bin/wllvm++     -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXXABI_HAS_EHSC_FLAG  -Werror=unguarded-availability-new -nodefaultlibs   /EHsc -o CMakeFiles/cmTC_60df1.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx
+WARNING:Did not recognize the compiler flag "/EHsc"
+clang: error: no such file or directory: '/EHsc'
+ERROR:Failed to compile using given arguments: [-fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXXABI_HAS_EHSC_FLAG -Werror=unguarded-availability-new -nodefaultlibs /EHsc -o CMakeFiles/cmTC_60df1.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx]
+CMakeFiles/cmTC_60df1.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_60df1.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_60df1.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_60df1/fast' failed
+make: *** [cmTC_60df1/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_NO_EHS_FLAG failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ead49/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ead49.dir/build.make CMakeFiles/cmTC_ead49.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ead49.dir/src.cxx.o
+/usr/local/bin/wllvm++     -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXXABI_HAS_NO_EHS_FLAG  -Werror=unguarded-availability-new -nodefaultlibs   /EHs- -o CMakeFiles/cmTC_ead49.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx
+WARNING:Did not recognize the compiler flag "/EHs-"
+clang: error: no such file or directory: '/EHs-'
+ERROR:Failed to compile using given arguments: [-fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXXABI_HAS_NO_EHS_FLAG -Werror=unguarded-availability-new -nodefaultlibs /EHs- -o CMakeFiles/cmTC_ead49.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx]
+CMakeFiles/cmTC_ead49.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_ead49.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_ead49.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ead49/fast' failed
+make: *** [cmTC_ead49/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_NO_EHA_FLAG failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8dc01/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8dc01.dir/build.make CMakeFiles/cmTC_8dc01.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8dc01.dir/src.cxx.o
+/usr/local/bin/wllvm++     -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXXABI_HAS_NO_EHA_FLAG  -Werror=unguarded-availability-new -nodefaultlibs   /EHa- -o CMakeFiles/cmTC_8dc01.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx
+WARNING:Did not recognize the compiler flag "/EHa-"
+clang: error: no such file or directory: '/EHa-'
+ERROR:Failed to compile using given arguments: [-fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXXABI_HAS_NO_EHA_FLAG -Werror=unguarded-availability-new -nodefaultlibs /EHa- -o CMakeFiles/cmTC_8dc01.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx]
+CMakeFiles/cmTC_8dc01.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_8dc01.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_8dc01.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8dc01/fast' failed
+make: *** [cmTC_8dc01/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_HAS_NO_GR_FLAG failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_46cc2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_46cc2.dir/build.make CMakeFiles/cmTC_46cc2.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_46cc2.dir/src.cxx.o
+/usr/local/bin/wllvm++     -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXXABI_HAS_NO_GR_FLAG  -Werror=unguarded-availability-new -nodefaultlibs   /GR- -o CMakeFiles/cmTC_46cc2.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx
+WARNING:Did not recognize the compiler flag "/GR-"
+clang: error: no such file or directory: '/GR-'
+ERROR:Failed to compile using given arguments: [-fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXXABI_HAS_NO_GR_FLAG -Werror=unguarded-availability-new -nodefaultlibs /GR- -o CMakeFiles/cmTC_46cc2.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx]
+CMakeFiles/cmTC_46cc2.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_46cc2.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_46cc2.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_46cc2/fast' failed
+make: *** [cmTC_46cc2/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_WX_FLAG failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_31c56/fast"
+/usr/bin/make -f CMakeFiles/cmTC_31c56.dir/build.make CMakeFiles/cmTC_31c56.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_31c56.dir/src.cxx.o
+/usr/local/bin/wllvm++     -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXXABI_SUPPORTS_WX_FLAG  -Werror=unguarded-availability-new -nodefaultlibs   -WX- -o CMakeFiles/cmTC_31c56.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx
+warning: unknown warning option '-WX-' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-WX-' [-Wunknown-warning-option]
+1 warning generated.
+Linking CXX executable cmTC_31c56
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31c56.dir/link.txt --verbose=1
+/usr/local/bin/wllvm++    -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXXABI_SUPPORTS_WX_FLAG  -Werror=unguarded-availability-new -nodefaultlibs   -Wl,-allow-shlib-undefined  CMakeFiles/cmTC_31c56.dir/src.cxx.o  -o cmTC_31c56 -lm -lc -lgcc_s 
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_EHSC_FLAG failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3ea9b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3ea9b.dir/build.make CMakeFiles/cmTC_3ea9b.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3ea9b.dir/src.cxx.o
+/usr/local/bin/wllvm++     -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXXABI_SUPPORTS_EHSC_FLAG  -Werror=unguarded-availability-new -nodefaultlibs   -EHsc -o CMakeFiles/cmTC_3ea9b.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx
+WARNING:Did not recognize the compiler flag "-EHsc"
+clang: error: unknown argument: '-EHsc'
+ERROR:Failed to compile using given arguments: [-fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXXABI_SUPPORTS_EHSC_FLAG -Werror=unguarded-availability-new -nodefaultlibs -EHsc -o CMakeFiles/cmTC_3ea9b.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx]
+CMakeFiles/cmTC_3ea9b.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_3ea9b.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_3ea9b.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_3ea9b/fast' failed
+make: *** [cmTC_3ea9b/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_HAS_WX_FLAG failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fd79e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fd79e.dir/build.make CMakeFiles/cmTC_fd79e.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fd79e.dir/src.cxx.o
+/usr/local/bin/wllvm++     -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXX_HAS_WX_FLAG  -Werror=unguarded-availability-new -nodefaultlibs   /WX -o CMakeFiles/cmTC_fd79e.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx
+WARNING:Did not recognize the compiler flag "/WX"
+clang: error: no such file or directory: '/WX'
+ERROR:Failed to compile using given arguments: [-fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXX_HAS_WX_FLAG -Werror=unguarded-availability-new -nodefaultlibs /WX -o CMakeFiles/cmTC_fd79e.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx]
+CMakeFiles/cmTC_fd79e.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_fd79e.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_fd79e.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_fd79e/fast' failed
+make: *** [cmTC_fd79e/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_HAS_NO_WX_FLAG failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_967b5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_967b5.dir/build.make CMakeFiles/cmTC_967b5.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_967b5.dir/src.cxx.o
+/usr/local/bin/wllvm++     -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXX_HAS_NO_WX_FLAG  -Werror=unguarded-availability-new -nodefaultlibs   /WX- -o CMakeFiles/cmTC_967b5.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx
+WARNING:Did not recognize the compiler flag "/WX-"
+clang: error: no such file or directory: '/WX-'
+ERROR:Failed to compile using given arguments: [-fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXX_HAS_NO_WX_FLAG -Werror=unguarded-availability-new -nodefaultlibs /WX- -o CMakeFiles/cmTC_967b5.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx]
+CMakeFiles/cmTC_967b5.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_967b5.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_967b5.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_967b5/fast' failed
+make: *** [cmTC_967b5/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_HAS_EHSC_FLAG failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ec4bd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ec4bd.dir/build.make CMakeFiles/cmTC_ec4bd.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ec4bd.dir/src.cxx.o
+/usr/local/bin/wllvm++     -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXX_HAS_EHSC_FLAG  -Werror=unguarded-availability-new -nodefaultlibs   /EHsc -o CMakeFiles/cmTC_ec4bd.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx
+WARNING:Did not recognize the compiler flag "/EHsc"
+clang: error: no such file or directory: '/EHsc'
+ERROR:Failed to compile using given arguments: [-fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXX_HAS_EHSC_FLAG -Werror=unguarded-availability-new -nodefaultlibs /EHsc -o CMakeFiles/cmTC_ec4bd.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx]
+CMakeFiles/cmTC_ec4bd.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_ec4bd.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_ec4bd.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ec4bd/fast' failed
+make: *** [cmTC_ec4bd/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_HAS_NO_EHS_FLAG failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_47559/fast"
+/usr/bin/make -f CMakeFiles/cmTC_47559.dir/build.make CMakeFiles/cmTC_47559.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_47559.dir/src.cxx.o
+/usr/local/bin/wllvm++     -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXX_HAS_NO_EHS_FLAG  -Werror=unguarded-availability-new -nodefaultlibs   /EHs- -o CMakeFiles/cmTC_47559.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx
+WARNING:Did not recognize the compiler flag "/EHs-"
+clang: error: no such file or directory: '/EHs-'
+ERROR:Failed to compile using given arguments: [-fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXX_HAS_NO_EHS_FLAG -Werror=unguarded-availability-new -nodefaultlibs /EHs- -o CMakeFiles/cmTC_47559.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx]
+CMakeFiles/cmTC_47559.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_47559.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_47559.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_47559/fast' failed
+make: *** [cmTC_47559/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_HAS_NO_EHA_FLAG failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_50a89/fast"
+/usr/bin/make -f CMakeFiles/cmTC_50a89.dir/build.make CMakeFiles/cmTC_50a89.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_50a89.dir/src.cxx.o
+/usr/local/bin/wllvm++     -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXX_HAS_NO_EHA_FLAG  -Werror=unguarded-availability-new -nodefaultlibs   /EHa- -o CMakeFiles/cmTC_50a89.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx
+WARNING:Did not recognize the compiler flag "/EHa-"
+clang: error: no such file or directory: '/EHa-'
+ERROR:Failed to compile using given arguments: [-fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXX_HAS_NO_EHA_FLAG -Werror=unguarded-availability-new -nodefaultlibs /EHa- -o CMakeFiles/cmTC_50a89.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx]
+CMakeFiles/cmTC_50a89.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_50a89.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_50a89.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_50a89/fast' failed
+make: *** [cmTC_50a89/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_HAS_NO_GR_FLAG failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8fd13/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8fd13.dir/build.make CMakeFiles/cmTC_8fd13.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8fd13.dir/src.cxx.o
+/usr/local/bin/wllvm++     -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXX_HAS_NO_GR_FLAG  -Werror=unguarded-availability-new -nodefaultlibs   /GR- -o CMakeFiles/cmTC_8fd13.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx
+WARNING:Did not recognize the compiler flag "/GR-"
+clang: error: no such file or directory: '/GR-'
+ERROR:Failed to compile using given arguments: [-fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXX_HAS_NO_GR_FLAG -Werror=unguarded-availability-new -nodefaultlibs /GR- -o CMakeFiles/cmTC_8fd13.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx]
+CMakeFiles/cmTC_8fd13.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_8fd13.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_8fd13.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8fd13/fast' failed
+make: *** [cmTC_8fd13/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_EHSC_FLAG failed with the following output:
+Change Dir: /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0c880/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0c880.dir/build.make CMakeFiles/cmTC_0c880.dir/build
+make[1]: Entering directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0c880.dir/src.cxx.o
+/usr/local/bin/wllvm++     -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers  -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXX_SUPPORTS_EHSC_FLAG  -Werror=unguarded-availability-new -nodefaultlibs   -EHsc -o CMakeFiles/cmTC_0c880.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx
+WARNING:Did not recognize the compiler flag "-EHsc"
+clang: error: unknown argument: '-EHsc'
+ERROR:Failed to compile using given arguments: [-fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -std=c++11 -Wall -W -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wno-long-long -Wcovered-switch-default -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXX_SUPPORTS_EHSC_FLAG -Werror=unguarded-availability-new -nodefaultlibs -EHsc -o CMakeFiles/cmTC_0c880.dir/src.cxx.o -c /home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp/src.cxx]
+CMakeFiles/cmTC_0c880.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_0c880.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_0c880.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/jg/klee/libcxx/libc++-build-60/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_0c880/fast' failed
+make: *** [cmTC_0c880/fast] Error 2
+
+Source file was:
+int main() { return 0; }

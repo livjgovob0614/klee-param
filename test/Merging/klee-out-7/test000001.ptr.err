@@ -1,0 +1,15 @@
+Error: memory error: out of bound pointer
+File: state_termination.c
+Line: 16
+assembly.ll line: 8642
+Stack: 
+	#000008642 in __klee_posix_wrapped_main (=1, =45272992) at state_termination.c:16
+	#100006907 in __user_main (=1, =19767424) at /home/jg/klee/runtime/POSIX/klee_init_env.c:243
+	#200000518 in __uClibc_main (=21335304, =1, =19767424, =0, =0, =0, =0) at libc/misc/internals/__uClibc_main.c:401
+	#300000685 in main (=1, =19767424)
+Info: 
+	address: 45423333
+	next: object at 45423336 of size 4
+		MO7126[4] allocated at __klee_posix_wrapped_main():  %3 = alloca i32, align 4
+	prev: object at 45423328 of size 5
+		MO7130[5] allocated at __klee_posix_wrapped_main():  %7 = alloca [5 x i8], align 1
