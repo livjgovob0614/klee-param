@@ -153,12 +153,6 @@ bool ConstraintManager::addConstraintInternal(ref<Expr> e) {
       BinaryExpr *be = cast<BinaryExpr>(e);
       if (isa<ConstantExpr>(be->left)) {
 	ExprReplaceVisitor visitor(be->right, be->left);
-/*
-    klee_message("\n\n## before rewrite: ");
-    for (auto it=constraints.begin(); it !=constraints.end(); ++it) {
-      klee_message("Const: ");
-      llvm::errs() << *it;  
-    }*/
 	rewriteConstraints(visitor);
       }
     }
@@ -173,22 +167,10 @@ bool ConstraintManager::addConstraintInternal(ref<Expr> e) {
     break;
   }
 
-  if (changed) {
-/*
-    klee_message("\n\n***** addConst: ");
-    for (auto it=constraints.begin(); it !=constraints.end(); ++it) {
-      klee_message("Const: ");
-      llvm::errs() << *it;  
-    }*/
-  }
-
   return changed;
 }
 
 bool ConstraintManager::addConstraint(ref<Expr> e) {
-  //klee_message("------------------before simplify----------------------");
-  //llvm::errs() << e << "\n----------------after------------------\n";
   e = simplifyExpr(e);
-  //llvm::errs() << e << "\n";
   return addConstraintInternal(e);
 }

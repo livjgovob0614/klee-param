@@ -190,9 +190,7 @@ WeightedRandomSearcher::~WeightedRandomSearcher() {
 ExecutionState &WeightedRandomSearcher::selectState() {
   double d = theRNG.getDoubleL();
   ExecutionState* st = states->choose(d);
-  //klee_warning("selected state's weight: %lf (func:%s)", getWeight(st),st->stack.back().kf->function->getName().str().c_str());
   return *st;
-  //return *states->choose(theRNG.getDoubleL());
 }
 
 double WeightedRandomSearcher::getWeight(ExecutionState *es) {
@@ -209,7 +207,6 @@ double WeightedRandomSearcher::getWeight(ExecutionState *es) {
   case CPInstCount: {
     StackFrame &sf = es->stack.back();
     uint64_t count = sf.callPathNode->statistics.getValue(stats::instructions);
-    klee_warning("count: %lu", count);
     double inv = 1. / std::max((uint64_t) 1, count);
     return inv;
   }
@@ -225,7 +222,6 @@ double WeightedRandomSearcher::getWeight(ExecutionState *es) {
       double invCovNew = 0.;
       if (es->instsSinceCovNew)
         invCovNew = 1. / std::max(1, (int) es->instsSinceCovNew - 1000);
-      //klee_warning("target state's invConVew:%lf, md2u:%lf", invCovNew, md2u);
       return (invCovNew * invCovNew + invMD2U * invMD2U);
     } else {
       return invMD2U * invMD2U;

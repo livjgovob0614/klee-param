@@ -64,7 +64,6 @@ DiscretePDF<T>::Node::~Node() {
 template <class T>
 DiscretePDF<T>::DiscretePDF() {
   m_root = 0;
-  choose_cnt = 0;
 }
 
 template <class T>
@@ -170,19 +169,12 @@ T DiscretePDF<T>::choose(double p) {
   if (!m_root)
     assert(0 && "choose: choose() called on empty tree");
 
-  bool print = false;
-  if (++choose_cnt > 1000000) print=true;
-
   weight_type w = (weight_type) (m_root->sumWeights * p);
-  //if (print) klee_warning("\n*******new choose********\nran:%lf, root's sumWeight:%lf, weight:%lf", p, m_root->sumWeights, m_root->weight);
   Node *n = m_root;
 
   while (1) {
-    //if (print) klee_warning("current w: %lf, node's weight:%lf", w, n->weight);
     if (n->left) {
-	//if (print) klee_warning("n->left's sumWeights:%lf", n->left->sumWeights);
       if (w<n->left->sumWeights) {
-	//if (print) klee_warning("go to left");
 	n = n->left;
 	continue;
       } else {
@@ -194,10 +186,8 @@ T DiscretePDF<T>::choose(double p) {
     }
     w -= n->weight;
     n = n->right;
-    //if (print) klee_warning("go to right");
   }
 
-  //if (print) klee_warning("selected state's weight: %lf", n->weight);
   return n->key;
 }
 

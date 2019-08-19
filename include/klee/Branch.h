@@ -15,9 +15,6 @@ public:
   Branch(string &_functionName, unsigned _id, unsigned _caseId, bool _isSwitchInst, bool _isLoopBranch, bool _isInLoop);
   ~Branch();
 
-  set<Branch*> getNextBranch(int k);
-
-
   vector<int> static_feature;
 
   string functionName;
@@ -25,7 +22,6 @@ public:
   unsigned caseId;
   int selectedCount;
   bool isCovered;
-  set<Branch*> nextBranch;
 };
 
 

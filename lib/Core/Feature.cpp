@@ -244,17 +244,8 @@ void IsFreshBranch::computeFeature(const set<ExecutionState*>& states)
 
   for (auto const& st: states) {
     Branch* br = st->lastBranch;
-    set<Branch*> check_brs = br->getNextBranch(k);
 
-    bool uncov = false;
-    for (auto& b : check_brs) {
-      if (!b->isCovered) {
-        uncov = true;
-        break;
-       }
-    }
-
-    if (uncov) {
+    if (!br->isCovered) {
       checkedStates_.push_back(true);
     }
     else {

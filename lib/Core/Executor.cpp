@@ -1175,21 +1175,12 @@ void Executor::addConstraint(ExecutionState &state,
     if (br_it == branchInfo.end()) {
       br = new Branch(functionName, id, caseId, false, false, false);
       branchInfo[std::make_pair(id, caseId)] = br;
-      //klee_warning("** new Branch: %s, id:%d", functionName.c_str(), id);
     }
     else
       br = br_it->second;
 
     state.lastBranch = br;
 
-// test
-/*
-    klee_message("&&&& in addConst. the state's all constraints:");
-    for (auto i=state.constraints.begin(); i!=state.constraints.end();++i) {
-      klee_message(" ");
-      llvm::errs() << *i << "\n";
-    }
-*/
   }
   if (ivcEnabled)
     doImpliedValueConcretization(state, condition,
@@ -1750,9 +1741,6 @@ void Executor::executeInstruction(ExecutionState &state, KInstruction *ki) {
 
       cond = optimizer.optimizeExpr(cond, false);
       Executor::StatePair branches = fork(state, cond, false, ki);
-      //klee_message("\n*******************fork1*******************");
-      //klee_message("br: ");
-      //llvm::errs() << *bi << "\n";
 
       // NOTE: There is a hidden dependency here, markBranchVisited
       // requires that we still be in the context of the branch
@@ -1761,7 +1749,6 @@ void Executor::executeInstruction(ExecutionState &state, KInstruction *ki) {
       if (statsTracker && state.stack.back().kf->trackCoverage)
         statsTracker->markBranchVisited(branches.first, branches.second);
 
-// here 
       if (!branches.first && branches.second) {
         Branch* br = branches.second->lastBranch;
         if (br && !br->isCovered) {
@@ -2084,7 +2071,6 @@ void Executor::executeInstruction(ExecutionState &state, KInstruction *ki) {
         assert(success && "FIXME: Unhandled solver failure");
         (void) success;
         StatePair res = fork(*free, EqExpr::create(v, value), true, ki);
-      //klee_message("fork2");
 
 // for feature
         if (!res.first && res.second) {
@@ -3083,7 +3069,6 @@ void Executor::run(ExecutionState &initialState) {
   std::vector<ExecutionState *> newStates(states.begin(), states.end());
   searcher->update(0, newStates, std::vector<ExecutionState *>());
 
-  klee_warning("start main");
   while (!states.empty() && !haltExecution) {
     ExecutionState &state = searcher->selectState();
 
@@ -3185,13 +3170,6 @@ void Executor::terminateState(ExecutionState &state) {
                       "replay did not consume all objects in test input.");
   }
 
-/*
-  klee_message("\n-------------------terminate State!-----------------\nthe state's all const:");
-    for (auto i=state.constraints.begin(); i!=state.constraints.end();++i) {
-      klee_message(" ");
-      llvm::errs() << *i << "\n";
-    }
-*/  
   interpreterHandler->incPathsExplored();
 
   std::vector<ExecutionState *>::iterator it =

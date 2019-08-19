@@ -244,9 +244,6 @@ StatsTracker::StatsTracker(Executor &_executor, std::string _objectFilename,
     Function* f = kf->function;
     string fname = f->getName().str();
 
-    std::vector<Branch*> pre_br_vec;
-    int pre_br_size = 0;
-
     int br_cnt = 0;
     bool isInLoop = false;
     unsigned loopDepthCheck = 0;
@@ -263,7 +260,6 @@ StatsTracker::StatsTracker(Executor &_executor, std::string _objectFilename,
     for (unsigned i=0; i<kf->numInstructions; ++i) {
       KInstruction *ki = kf->instructions[i];
       unsigned id = ki->info->id;
-      std::vector<Branch*> br_vec;
       unsigned int br_size = 0;
       bool isSwitchInst = false;
       bool isLoopBranch = false;
@@ -280,37 +276,11 @@ StatsTracker::StatsTracker(Executor &_executor, std::string _objectFilename,
             br_cnt += 2;
             br_size = 1;
             numBranches++;
-
-  	    //if (i==bb->getTerminator()) {
-  	    BasicBlock *bb = bi->getParent();
-    	    //for (succ_iterator it = succ_begin(bb), ie = succ_end(bb); it != ie; ++it) {
-
-	    if (fname.compare("func") == 0) {
-	     llvm::errs() << "new suc:\n";
-	     BasicBlock* suc = bi->getSuccessor(1);
-	     std::vector<Instruction*> vv = getSuccs(bi);
-	     for (auto i = vv.begin(); i != vv.end(); ++i) {
-		//const InstructionInfo &ii = executor.kmodule->infos->getInfo(i);
-	       llvm::errs() << **i << "\n";
-	     }
-	 	llvm::errs() << "unique suc,pred?\n";
-
-		const BasicBlock* us = bb->getUniqueSuccessor();
-		const Instruction* ir1 = &(us->front());
-		llvm::errs() << "    " << *ir1 << "\n";
-		const BasicBlock* us2 = bb->getUniquePredecessor();
-		const Instruction* ir = &(us2->front());
-		llvm::errs() << "    " << *ir << "\n";
-
-	    }
-	    //klee_warning("Fun: %s, NumSuc: %d", fname.c_str(), bi->getNumSuccessors());
-		
           }
         }
         else if (SwitchInst *si = dyn_cast<SwitchInst>(ki->inst)) {
           int numCase = si->getNumCases();
 
-          // +1 for default case
           br_cnt += numCase + 1;
           br_size = numCase;
           isSwitchInst = true;
@@ -319,7 +289,7 @@ StatsTracker::StatsTracker(Executor &_executor, std::string _objectFilename,
 /////////////////////////////////////////
 /////////////////////////////////////////
         if (executor.isParamSearch && br_size) {
-          ++br_size;    // for else or default case
+          ++br_size; 
 
           // loop check //
           BasicBlock* bb = ki->inst->getParent();
@@ -337,30 +307,10 @@ StatsTracker::StatsTracker(Executor &_executor, std::string _objectFilename,
           }
 
           // make Branch obj //
-	  br_vec.reserve(br_size);
-
           for (unsigned int i = 0; i < br_size; ++i) {
             Branch* branch = new Branch(fname, id, i, isSwitchInst, isLoopBranch, isInLoop);
-            br_vec.push_back(branch);
             executor.branchInfo[std::make_pair(id, i)] = branch;
           }
-
-          // insert next_branch info //
-          if (pre_br_vec.size() < br_size) {
-            pre_br_vec.resize(br_size);
-          }
-
-          if (!pre_br_vec.empty()) {
-            for (int i = 0; i < pre_br_size; ++i) {
-              for (auto& v : br_vec)
-                pre_br_vec[i]->nextBranch.insert(v);
-            }
-          }
-
-          assert(pre_br_vec.size() >= br_vec.size() && "size error");
-          for (unsigned int i = 0; i < br_size; ++i)
-            pre_br_vec[i] = br_vec[i];
-          pre_br_size = br_size;
         }
       }
     }

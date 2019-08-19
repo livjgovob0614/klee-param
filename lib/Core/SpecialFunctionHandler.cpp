@@ -347,7 +347,6 @@ void SpecialFunctionHandler::handleOpenMerge(ExecutionState &state,
     KInstruction *target,
     std::vector<ref<Expr> > &arguments) {
 
-  klee_warning("open merge!! **");
   if (!UseMerge) {
     klee_warning_once(0, "klee_open_merge ignored, use '-use-merge'");
     return;

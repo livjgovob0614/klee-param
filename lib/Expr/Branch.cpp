@@ -59,16 +59,3 @@ Branch::Branch(string &_functionName, unsigned _id, unsigned _caseId, bool _isSw
 
 Branch::~Branch() {}
 
-std::set<Branch*> Branch::getNextBranch(int k)
-{
-
-  if (k == 0) {
-    std::set<Branch*> s;
-    s.insert(this);
-    return s;
-  }
-  else {
-    return this->nextBranch;
-  }
-}
-
