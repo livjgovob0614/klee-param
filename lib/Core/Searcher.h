@@ -19,6 +19,7 @@
 #include <queue>
 #include <set>
 #include <vector>
+#include <numeric>
 
 namespace llvm {
   class BasicBlock;

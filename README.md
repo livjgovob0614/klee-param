@@ -1,26 +1,39 @@
-KLEE Symbolic Virtual Machine
-=============================
+# KLEE-ParaDySE
 
-[![Build Status](https://travis-ci.org/klee/klee.svg?branch=master)](https://travis-ci.org/klee/klee)
-[![Coverage](https://codecov.io/gh/klee/klee/branch/master/graph/badge.svg)](https://codecov.io/gh/klee/klee)
+## Building KLEE-ParaDySE 
+We recommend to build our KLEE-ParaDySE with LLVM 6.0.
+see [KLEE][klee].
 
-`KLEE` is a symbolic virtual machine built on top of the LLVM compiler
-infrastructure. Currently, there are two primary components:
+Build:
+```sh
+$ cd ~/KLEE-ParaDySE
+$ mkdir build
+$ cd build
+$ cmake \
+  -DENABLE_SOLVER_STP=ON \
+  -DENABLE_POSIX_RUNTIME=ON \
+  -DENABLE_KLEE_UCLIBC=ON \
+  -DKLEE_UCLIBC_PATH=<KLEE_UCLIBC_SOURCE_DIR> \
+  -DENABLE_UNIT_TESTS=OFF \
+  -DLLVM_CONFIG_BINARY=<PATH_TO_llvm-config-6.0> \
+  -DLLVMCC=<PATH_TO_clang-6.0> \
+  -DLLVMCXX=<PATH_TO_clang++-6.0> \
+  -DENABLE_KLEE_LIBCXX=ON \
+  -DKLEE_LIBCXX_DIR=<LIBCXX_INSTALL_DIR>/libc++-install-60/ \
+   -DKLEE_LIBCXX_INCLUDE_DIR=<LIBCXX_INSTALL_DIR>/libc++-install-60/include/c++/v1/ \
+  <KLEE_SRC_DIRECTORY>
+$ make
+```
 
-  1. The core symbolic virtual machine engine; this is responsible for
-     executing LLVM bitcode modules with support for symbolic
-     values. This is comprised of the code in lib/.
+## Run a benchmark. 
+```sh
+$ cd ~/klee-ParaDySE/benchmarks/coreutils-8.31/
+$ klee --libc=uclibc --posix-runtime ... --search=param --weight=./weight/ls.w ls.bc ..
+``` 
 
-  2. A POSIX/Linux emulation layer oriented towards supporting uClibc,
-     with additional support for making parts of the operating system
-     environment symbolic.
 
-Additionally, there is a simple library for replaying computed inputs
-on native code (for closed programs). There is also a more complicated
-infrastructure for replaying the inputs generated for the POSIX/Linux
-emulation layer, which handles running native programs in an
-environment that matches a computed test input, including setting up
-files, pipes, environment variables, and passing command line
-arguments.
+## Autimatically generate a search heuristic.
 
-For further information, see the [webpage](http://klee.github.io/).
+
+	
+[klee]:https://klee.github.io/build-llvm60/
