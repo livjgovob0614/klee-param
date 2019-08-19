@@ -492,7 +492,7 @@ ParameterizedSearcher::ParameterizedSearcher(Executor &_executor, const std::str
   dyFeatures_.push_back(new IsFrequentlySelectedBranch(20));
   dyFeatures_.push_back(new IsFrequentlySelectedBranch(30));
   dyFeatures_.push_back(new IsNearSelectedBefore());
-  dyFeatures_.push_back(new IsFreshBranch(0));
+  dyFeatures_.push_back(new IsFreshBranch());
   dyFeatures_.push_back(new IsRecentlySelectedBranch(10));
   dyFeatures_.push_back(new IsRecentlySelectedBranch(20));
   dyFeatures_.push_back(new IsRecentlySelectedBranch(30));
@@ -500,8 +500,8 @@ ParameterizedSearcher::ParameterizedSearcher(Executor &_executor, const std::str
   dyFeatures_.push_back(new IsInMostRecentlyReachedFunc());
   dyFeatures_.push_back(new IsDeepestState());
   dyFeatures_.push_back(new IsShallowestState());
-  dyFeatures_.push_back(new InstCount(0));
-  dyFeatures_.push_back(new CPInstCount(0));
+  dyFeatures_.push_back(new InstCount());
+  dyFeatures_.push_back(new CPInstCount());
   dyFeatures_.push_back(new IsQueryCostLow());
   dyFeatures_.push_back(new MinDistToUncov());
   dyFeatures_.push_back(new CovNew());

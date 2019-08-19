@@ -430,7 +430,7 @@ Executor::Executor(LLVMContext &ctx, const InterpreterOptions &opts,
       pathWriter(0), symPathWriter(0), specialFunctionHandler(0),
       processTree(0), replayKTest(0), replayPath(0), usingSeeds(0),
       atMemoryLimit(false), inhibitForking(false), haltExecution(false),
-      ivcEnabled(false), debugLogBuffer(debugBufferString), less_cnt(0) {
+      ivcEnabled(false), debugLogBuffer(debugBufferString) {
 
   const time::Span maxCoreSolverTime(MaxCoreSolverTime);
   maxInstructionTime = time::Span(MaxInstructionTime);
@@ -1672,13 +1672,6 @@ void Executor::executeInstruction(ExecutionState &state, KInstruction *ki) {
   Function *f = sf.kf->function;
   const std::string func = f->getName().str();
 
-/*
-  if (func.compare("__get_sym_str") == 0) {
-    auto m_it = numBranchesOfFunc.find(func);
-    klee_warning("%s br: %d", func.c_str(), m_it->second);
-  }
-*/
-
   switch (i->getOpcode()) {
     // Control flow
   case Instruction::Ret: {
@@ -1773,12 +1766,9 @@ void Executor::executeInstruction(ExecutionState &state, KInstruction *ki) {
         Branch* br = branches.second->lastBranch;
         if (br && !br->isCovered) {
           auto m_it = numBranchesOfFunc.find(func);
-          if (m_it->second <= 0) {
-            less_cnt++;
-          }
-          else {
-          --m_it->second;
-          br->isCovered = 1;
+          if (m_it->second > 0) {
+            --m_it->second;
+            br->isCovered = 1;
           }
         }
       }
@@ -1786,19 +1776,13 @@ void Executor::executeInstruction(ExecutionState &state, KInstruction *ki) {
         Branch* br = branches.first->lastBranch;
         if (br && !br->isCovered) {
           auto m_it = numBranchesOfFunc.find(func);
-          if (m_it->second <= 0) {
-            //klee_warning("%s numbr is less than 0..(%d)", func.c_str(), m_it->second);
-            less_cnt++;
-          }
-          //assert(m_it->second > 0 && "wrong number of branches");
-          else {
-          --m_it->second;
-          br->isCovered = 1;
+          if (m_it->second > 0) {
+            --m_it->second;
+            br->isCovered = 1;
           }
         }
       }
 
-// check 0508-2?
       if (branches.first) {
         transferToBasicBlock(bi->getSuccessor(0), bi->getParent(), *branches.first);
       }
@@ -2107,25 +2091,19 @@ void Executor::executeInstruction(ExecutionState &state, KInstruction *ki) {
           Branch* br = res.second->lastBranch;
           if (br && !br->isCovered) {
             auto m_it = numBranchesOfFunc.find(func);
-          if (m_it->second <= 0) {
-            less_cnt++;
-          }
-          else {
-            --m_it->second;
-            br->isCovered = 1;
-          }
+            if (m_it->second > 0) {
+              --m_it->second;
+              br->isCovered = 1;
+            }
           }
         }
         else if (!res.second && res.first) {
           Branch* br = res.first->lastBranch;
           if (br && !br->isCovered) {
             auto m_it = numBranchesOfFunc.find(func);
-          if (m_it->second <= 0) {
-            less_cnt++;
-          }
-          else {
-            --m_it->second;
-            br->isCovered = 1;
+            if (m_it->second > 0) {
+              --m_it->second;
+              br->isCovered = 1;
             }
           }
         }
@@ -3611,12 +3589,9 @@ void Executor::executeAlloc(ExecutionState &state,
       Branch* br = fixedSize.second->lastBranch;
       if (br && !br->isCovered) {
         auto m_it = numBranchesOfFunc.find(func);
-          if (m_it->second <= 0) {
-            less_cnt++;
-          }
-          else {
-         --m_it->second;
-        br->isCovered = 1;
+        if (m_it->second > 0) {
+          --m_it->second;
+          br->isCovered = 1;
         }
       }
     }
@@ -3624,12 +3599,9 @@ void Executor::executeAlloc(ExecutionState &state,
       Branch* br = fixedSize.first->lastBranch;
       if (br && !br->isCovered) {
         auto m_it = numBranchesOfFunc.find(func);
-          if (m_it->second <= 0) {
-            less_cnt++;
-          }
-          else {
-        --m_it->second;
-        br->isCovered = 1;
+        if (m_it->second > 0) {
+          --m_it->second;
+          br->isCovered = 1;
         }
       }
     }
@@ -3660,25 +3632,19 @@ void Executor::executeAlloc(ExecutionState &state,
           Branch* br = hugeSize.second->lastBranch;
           if (br && !br->isCovered) {
             auto m_it = numBranchesOfFunc.find(func);
-          if (m_it->second <= 0) {
-            less_cnt++;
-          }
-          else {
-            --m_it->second;
-            br->isCovered = 1;
-           }
+            if (m_it->second > 0) {
+              --m_it->second;
+              br->isCovered = 1;
+            }
           }
         }
         else if (!hugeSize.second && hugeSize.first) {
           Branch* br = hugeSize.first->lastBranch;
           if (br && !br->isCovered) {
             auto m_it = numBranchesOfFunc.find(func);
-          if (m_it->second <= 0) {
-            less_cnt++;
-          }
-          else {
-            --m_it->second;
-            br->isCovered = 1;
+            if (m_it->second > 0) {
+              --m_it->second;
+              br->isCovered = 1;
             }
           }
         }
@@ -3725,26 +3691,20 @@ void Executor::executeFree(ExecutionState &state,
      Branch* br = zeroPointer.second->lastBranch;
      if (br && !br->isCovered) {
        auto m_it = numBranchesOfFunc.find(func);
-          if (m_it->second <= 0) {
-            less_cnt++;
-          }
-          else {
-       --m_it->second;
-       br->isCovered = 1;
-        }
+       if (m_it->second > 0) {
+         --m_it->second;
+         br->isCovered = 1;
+       }
      }
   }
   else if (!zeroPointer.second && zeroPointer.first) {
      Branch* br = zeroPointer.first->lastBranch;
      if (br && !br->isCovered) {
        auto m_it = numBranchesOfFunc.find(func);
-          if (m_it->second <= 0) {
-            less_cnt++;
-          }
-          else {
-       --m_it->second;
-       br->isCovered = 1;
-        }
+       if (m_it->second > 0) {
+         --m_it->second;
+         br->isCovered = 1;
+       }
      }
   }
 
@@ -3799,13 +3759,9 @@ void Executor::resolveExact(ExecutionState &state,
       Branch* br = branches.second->lastBranch;
       if (br && !br->isCovered) {
         auto m_it = numBranchesOfFunc.find(func);
-          if (m_it->second <= 0) {
-            less_cnt++;
-          }
-          else {
-
-        --m_it->second;
-        br->isCovered = 1;
+        if (m_it->second > 0) {
+          --m_it->second;
+          br->isCovered = 1;
         }
       }
     }
@@ -3813,13 +3769,9 @@ void Executor::resolveExact(ExecutionState &state,
       Branch* br = branches.first->lastBranch;
       if (br && !br->isCovered) {
         auto m_it = numBranchesOfFunc.find(func);
-          if (m_it->second <= 0) {
-            less_cnt++;
-          }
-          else {
-
-        --m_it->second;
-        br->isCovered = 1;
+        if (m_it->second > 0) {
+          --m_it->second;
+          br->isCovered = 1;
         }
       }
     }
@@ -3942,13 +3894,9 @@ void Executor::executeMemoryOperation(ExecutionState &state,
       Branch* br = branches.second->lastBranch;
       if (br && !br->isCovered) {
         auto m_it = numBranchesOfFunc.find(func);
-          if (m_it->second <= 0) {
-            less_cnt++;
-          }
-          else {
-
-        --m_it->second;
-        br->isCovered = 1;
+        if (m_it->second > 0) {
+          --m_it->second;
+          br->isCovered = 1;
         }
       }
     }
@@ -3956,13 +3904,9 @@ void Executor::executeMemoryOperation(ExecutionState &state,
       Branch* br = branches.first->lastBranch;
       if (br && !br->isCovered) {
         auto m_it = numBranchesOfFunc.find(func);
-          if (m_it->second <= 0) {
-            less_cnt++;
-          }
-          else {
-
-        --m_it->second;
-        br->isCovered = 1;
+        if (m_it->second > 0) {
+          --m_it->second;
+          br->isCovered = 1;
         }
       }
     }

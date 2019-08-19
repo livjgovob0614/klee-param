@@ -137,7 +137,6 @@ public:
   std::map< std::string, int > numBranchesOfFunc;
   std::set< FuncInfo > unreachedFunc;
   bool isParamSearch;
-  int less_cnt;
 private:
   static const char *TerminateReasonNames[];
 

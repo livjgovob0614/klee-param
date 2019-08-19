@@ -102,12 +102,9 @@ public:
 // 30~31
 class IsFreshBranch : public DynamicFeature {
 public:
-  IsFreshBranch(int _k);
+  IsFreshBranch();
   ~IsFreshBranch();
   virtual void computeFeature(const set<ExecutionState*>& states);
-
-private:
-  int k;
 };
 
 
@@ -154,26 +151,18 @@ public:
 //Inst count
 class InstCount : public DynamicFeature {
 public:
-  InstCount(bool top);
+  InstCount();
   ~InstCount();
-  template<typename T> void compute(const set<ExecutionState*>& states, T& st_set);
   virtual void computeFeature(const set<ExecutionState*>& states);
-
-private:
-  bool top_;
 };
 
 
 //CP Inst count
 class CPInstCount : public DynamicFeature {
 public:
-  CPInstCount(bool top);
+  CPInstCount();
   ~CPInstCount();
-  template<typename T> void compute(const set<ExecutionState*>& states, T& st_set);
   virtual void computeFeature(const set<ExecutionState*>& states);
-
-private:
-  bool top_;
 };
 
  

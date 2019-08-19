@@ -234,8 +234,8 @@ void IsNearSelectedBefore::computeFeature(const set<ExecutionState*>& states)
 
 
 // 30~31
-IsFreshBranch::IsFreshBranch(int _k)
- : DynamicFeature(), k(_k) {}
+IsFreshBranch::IsFreshBranch()
+ : DynamicFeature() {}
 
 IsFreshBranch::~IsFreshBranch() {}
 
@@ -356,14 +356,14 @@ using pair_t = pair<uint64_t, ExecutionState*>;
 
 // InstCount
 #define INST_COUNT(A) theStatisticManager->getIndexedValue(stats::instructions, A->pc->info->id)
-InstCount::InstCount(bool top)
- : DynamicFeature(), top_(top) {}
+InstCount::InstCount()
+ : DynamicFeature() {}
 
 InstCount::~InstCount() {}
 
-template <typename T>
-void InstCount::compute(const set<ExecutionState*>& states, T& st_set)
+void InstCount::computeFeature(const set<ExecutionState*>& states)
 {
+  set<pair_t> st_set;
   for (auto const& st: states) {
     st_set.insert(make_pair(INST_COUNT(st), st)); 
   }
@@ -382,29 +382,17 @@ void InstCount::compute(const set<ExecutionState*>& states, T& st_set)
   }
 }
 
-void InstCount::computeFeature(const set<ExecutionState*>& states)
-{
-  if (top_) {
-    set<pair_t, greater<pair_t>> st_set;
-    compute(states, st_set);
-  }
-  else {
-    set<pair_t> st_set;
-    compute(states, st_set);
-  }
-}
-
 
 // CPInstCount //
 #define CP_INST_COUNT(A) A->stack.back().callPathNode->statistics.getValue(stats::instructions) 
-CPInstCount::CPInstCount(bool top)
- : DynamicFeature(), top_(top) {}
+CPInstCount::CPInstCount()
+ : DynamicFeature() {}
 
 CPInstCount::~CPInstCount() {}
 
-template <typename T>
-void CPInstCount::compute(const set<ExecutionState*>& states, T& st_set)
+void CPInstCount::computeFeature(const set<ExecutionState*>& states)
 {
+  set<pair_t> st_set;
   for (auto const& st: states) {
     st_set.insert(make_pair(CP_INST_COUNT(st), st)); 
   }
@@ -420,18 +408,6 @@ void CPInstCount::compute(const set<ExecutionState*>& states, T& st_set)
     else {
       checkedStates_.push_back(false);
     }
-  }
-}
-
-void CPInstCount::computeFeature(const set<ExecutionState*>& states)
-{
-  if (top_) {
-    set<pair_t, greater<pair_t>> st_set;
-    compute(states, st_set);
-  }
-  else {
-    set<pair_t> st_set;
-    compute(states, st_set);
   }
 }
 

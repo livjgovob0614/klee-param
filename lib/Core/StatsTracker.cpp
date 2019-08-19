@@ -203,7 +203,6 @@ StatsTracker::StatsTracker(Executor &_executor, std::string _objectFilename,
     fullBranches(0),
     partialBranches(0),
     updateMinDistToUncovered(_updateMinDistToUncovered) {
-    curFunc = "";
 
   const time::Span statsWriteInterval(StatsWriteInterval);
   if (StatsWriteAfterInstructions > 0 && statsWriteInterval)
@@ -337,7 +336,7 @@ StatsTracker::StatsTracker(Executor &_executor, std::string _objectFilename,
             }
           }
 
-          // make branch* //
+          // make Branch obj //
 	  br_vec.reserve(br_size);
 
           for (unsigned int i = 0; i < br_size; ++i) {
@@ -375,10 +374,7 @@ StatsTracker::StatsTracker(Executor &_executor, std::string _objectFilename,
     	executor.unreachedFunc.insert(fi);
     }	
  
-//    tmp += br_cnt;  
   }
-    //klee_warning("size:%d", tmp);
-    //klee_warning("size:%d", numBranches);
 
   if (OutputStats) {
     auto db_filename = executor.interpreterHandler->getOutputFilename("run.stats");
@@ -529,10 +525,6 @@ void StatsTracker::framePushed(ExecutionState &es, StackFrame *parentFrame) {
   if (OutputIStats) {
     StackFrame &sf = es.stack.back();
 
-    if (curFunc != sf.kf->function->getName().str()) {
-      //klee_warning("########## new function: %s #########", sf.kf->function->getName().str().c_str());
-	curFunc = sf.kf->function->getName().str();
-    }
     if (UseCallPaths) {
       CallPathNode *parent = parentFrame ? parentFrame->callPathNode : 0;
       CallPathNode *cp = callPathManager.getCallPath(parent, 
