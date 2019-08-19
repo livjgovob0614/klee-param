@@ -129,11 +129,11 @@ ExecutionState::ExecutionState(const ExecutionState& state):
     forkDisabled(state.forkDisabled),
     coveredLines(state.coveredLines),
     ptreeNode(state.ptreeNode),
+    lastBranch(0),
     symbolics(state.symbolics),
     arrayNames(state.arrayNames),
     openMergeStack(state.openMergeStack),
-    steppedInstructions(state.steppedInstructions),
-    lastBranch(0)
+    steppedInstructions(state.steppedInstructions)
 {
   for (unsigned int i=0; i<symbolics.size(); i++)
     symbolics[i].first->refCount++;

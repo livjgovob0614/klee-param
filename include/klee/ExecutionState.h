@@ -106,9 +106,6 @@ public:
   /// @brief Constraints collected so far
   ConstraintManager constraints;
 
-  /// Branch information
-  Branch* lastBranch;
-
   /// Statistics and information
 
   /// @brief Costs for all queries issued for this state, in seconds
@@ -144,6 +141,9 @@ public:
 
   /// @brief Pointer to the process tree of the current state
   PTreeNode *ptreeNode;
+
+  /// Branch information
+  Branch* lastBranch;
 
   /// @brief Ordered list of symbolics: used to generate test cases.
   //
