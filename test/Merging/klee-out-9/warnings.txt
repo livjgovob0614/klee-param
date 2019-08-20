@@ -1,8 +1,0 @@
-KLEE: WARNING: --use-merge enabled. Using NURS_CovNew as default searcher.
-KLEE: WARNING: start main
-KLEE: WARNING ONCE: calling external: syscall(16, 0, 21505, 77075440) at /home/jg/klee/runtime/POSIX/fd.c:990 10
-KLEE: WARNING ONCE: calling __user_main with extra arguments.
-KLEE: WARNING ONCE: Alignment of memory from call "malloc" is not modelled. Using alignment of 8.
-KLEE: WARNING: open merge!! **
-KLEE: WARNING: 0x2efbc80 ran into a close at 0x2e96498 without a preceding open
-KLEE: WARNING: 0x2efb500 ran into a close at 0x2e96498 without a preceding open

@@ -2,7 +2,7 @@
 
 ## Building KLEE-ParaDySE 
 We recommend to build our KLEE-ParaDySE with LLVM 6.0.
-see [KLEE][klee].
+See [KLEE][klee].
 
 Build:
 ```sh
