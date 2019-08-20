@@ -6,6 +6,7 @@ See [KLEE][klee].
 
 Build:
 ```sh
+$ git clone https://github.com/livjgovob0614/klee-param.git
 $ cd ~/KLEE-ParaDySE
 $ mkdir build
 $ cd build
